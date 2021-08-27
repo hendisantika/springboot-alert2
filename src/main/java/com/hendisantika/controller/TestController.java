@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class TestController {
-    @GetMapping("/test")
+    @GetMapping("/")
     public String test() {
-        return "test";
+        return "index";
     }
 
-    @GetMapping("/test/{id}")
+    @GetMapping("/{id}")
     @ResponseBody
     public Object test(@PathVariable("id") String id, Model model) {
         return id != null && !id.trim().equals("") && id.equalsIgnoreCase("OK");

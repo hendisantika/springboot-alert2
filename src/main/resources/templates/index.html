@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="webjars/sweetalert2/7.28.10/dist/sweetalert2.min.css" rel="stylesheet">
-    <script src="webjars/sweetalert2/7.28.10/dist/sweetalert2.min.js"></script>
-    <script src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
+    <link href="webjars/sweetalert2/11.1.2/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="webjars/sweetalert2/11.1.2/dist/sweetalert2.min.js"></script>
+    <script src="webjars/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 <button class="btn1">Basic Information</button>
@@ -139,7 +139,7 @@
 
         }).then(function (result) {
             if (result.value) {
-                $.post("/test/" + result.value, callBack, "json");
+                $.post("/" + result.value, callBack, "json");
 
                 function callBack(data) {
                     if (data == true) {
