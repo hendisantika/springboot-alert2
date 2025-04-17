@@ -15,7 +15,7 @@
     <description>springboot-alert2</description>
     <properties>
         <java.version>21</java.version>
-        <sweetalert2.version>11.18.0</sweetalert2.version>
+        <sweetalert2.version>11.19.1</sweetalert2.version>
         <jquery.version>3.7.1</jquery.version>
     </properties>
     <dependencies>
